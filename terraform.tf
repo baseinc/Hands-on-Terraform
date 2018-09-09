@@ -55,7 +55,7 @@ resource "aws_vpc" "db-vpc" {
 
   # We explicitly prevent destruction using terraform. Remove this only if you really know what you're doing.
   lifecycle {
-    prevent_destroy = false
+    prevent_destroy = true
   }
 }
 
